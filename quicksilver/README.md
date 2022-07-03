@@ -20,7 +20,7 @@
 </blockquote>
 
 
-# Cara Menggunakan Snapshot QuickSilver Killerqueen-1
+# Cara Menggunakan Snapshot QuickSilver <code>KILLERQUEEN-1</code>
 
 
 Cara ini digunakan untuk mempercepat sinkronisasi Quicksilver dalam waktu 5-10 menit saja.
