@@ -70,13 +70,13 @@ Jika sudah muncul kurang lebih contohnya seperti ini. **Ingat** setiap user memi
 {
   "latest_block_hash": "4D080DC2C3733316B2121314BA22FE7359E2DA537897967DEF645F2F774BAB7B",
   "latest_app_hash": "D1CF57D4CF15F2F4F736E0511B228F4BBA9E839E9BC96AE430A066A19CB60500",
-  "latest_block_height": "108613",
+  "latest_block_height": "100",
   "latest_block_time": "2022-07-03T01:42:44.737537726Z",
   "earliest_block_hash": "D317A8E51CD2CA795CD54621A2FB59CD36A207E5381F941AEC1B95F771C1243F",
   "earliest_app_hash": "5134C1CD7211E489E40E1704ECF6CB92F04499E5F30804EA860E1F6D35F77B60",
-  "earliest_block_height": "66001",
+  "earliest_block_height": "1",
   "earliest_block_time": "2022-06-28T18:39:44.869949181Z",
-  "catching_up": false
+  "catching_up": true
 }
 ```
 
