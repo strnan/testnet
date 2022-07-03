@@ -9,7 +9,7 @@
 Cara ini digunakan untuk mempercepat sinkronisasi Quicksilver dalam waktu 5-10 menit saja.
 
 ## Hapus data QuickSilver
-Sebelum melakukan ini, harap backup data-data penting kalian seperti **priv_validator_key.json** dan **mnemonic** kalian! Karena jika tidak, maka kalian ***tidak akan bisa menjalankan validatornya dan kehilangan selamanya!*** Jika kalian baru pertama kali menggunakan Quicksilver, kalian bisa **abaikan** bagian ini.
+Sebelum melakukan ini, harap backup data-data penting kalian seperti <code>priv_validator_key.json</code> dan <code>mnemonic</code> kalian! Karena jika tidak, maka kalian ***tidak akan bisa menjalankan validatornya dan kehilangan selamanya!*** Jika kalian baru pertama kali menggunakan Quicksilver, kalian bisa **abaikan** bagian ini.
 
 ```
 sudo systemctl stop quicksilverd
