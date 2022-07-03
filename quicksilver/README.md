@@ -8,7 +8,7 @@
 ### Daftar Isi :
 <blockquote>
     
-- [Hapus Data Quicksilver](https://github.com/yantodotid/Testnet/tree/main/quicksilver#cara-menggunakan-snapshot-quicksilverr)
+- [Hapus Data Quicksilver](https://github.com/yantodotid/Testnet/tree/main/quicksilver#cara-menggunakan-snapshot-quicksilver)
 - [Install QuickSilver](https://github.com/yantodotid/Testnet/tree/main/quicksilver#install-quicksilver)
 - [Sinkronisasi](https://github.com/yantodotid/Testnet/tree/main/quicksilver#sinkronisasi)
 - [Update QuickSilver ke versi v0.4.1](https://github.com/yantodotid/Testnet/tree/main/quicksilver#update-quicksilver-ke-versi-v041)
