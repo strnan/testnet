@@ -149,7 +149,7 @@ sudo journalctl -u quicksilverd -f -o cat
 Untuk keluar tinggal tekan tombol <code>CTRL + Z</code>.
 
 ## Restore Validator dan Wallet
-Untuk bagian ini jika validator kalian masih tetap merah tetapi status sudah false bisa lakukan cara ini.
+Untuk bagian ini jika validator kalian masih tetap merah tetapi status sudah <code>false</code> bisa lakukan cara ini.
 
 - Stop dahulu nodenya.
 
