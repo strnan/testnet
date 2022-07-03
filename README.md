@@ -97,6 +97,12 @@ wget -O - $URL | tar -xvf - -C $HOME/.quicksilverd/data
 ## Jalankan Node
 Setelah selesai download, kalian langsung saja start Node kalian untuk memastikan kalau snapshot kalian sudah berjalan dengan lancar.
 
+- Start Node
+
+```
+sudo systemctl start quicksilverd
+```
+
 - Cek sinkronisasi
 
 ```
