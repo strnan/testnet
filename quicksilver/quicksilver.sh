@@ -10,8 +10,8 @@ echo "   #+#       #+#        #+#  #+#   #+#+#   #+#   #+##+# #+#    #+# +#+    
 echo " ########## ###          ### ###    ####   ###    #####  ########  #########  ##########  ########  ";
 echo -e "\e[0m"
 echo "=================================================="
-echo "\e[1m\e[32mQuicksilver v0.4.1 dan Sudah termasuk Snaphot agar cepat sinkronisasi\e[0m"
-echo "\e[1m\e[32mSumber dari KjNodes dan TestNetRun\e[0m"
+echo -e "\e[1m\e[32mQuicksilver v0.4.1 dan Sudah termasuk Snaphot agar cepat sinkronisasi\e[0m"
+echo -e "\e[1m\e[32mSumber dari KjNodes dan TestNetRun\e[0m"
 
 sleep 2
 
