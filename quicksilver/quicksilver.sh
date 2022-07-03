@@ -10,8 +10,8 @@ echo " #+#   #+#  #+# #+#     #+#   #+#+# #+#    #+# #+#    #+# #+#       #+#   
 echo " ###    ###  #####      ###    ####  ########  #########  ########## ########  ";
 echo -e "\e[0m"
 echo "=================================================="
-echo "\e[1m\e[32m Quicksilver v0.4.1 dan Sudah termasuk Snaphot agar cepat sinkronisasi \e[0m"
-echo "\e[1m\e[32m Sumber dari KjNodes dan TestNetRun \e[0m"
+echo "\e[1m\e[32mQuicksilver v0.4.1 dan Sudah termasuk Snaphot agar cepat sinkronisasi\e[0m"
+echo "\e[1m\e[32mSumber dari KjNodes dan TestNetRun\e[0m"
 
 sleep 2
 
@@ -121,7 +121,7 @@ LimitNOFILE=65535
 WantedBy=multi-user.target
 EOF
 
-echo -e "\e[1m\e[32m3. Sedang download snapshot... \e[0m" && sleep 1
+echo -e "\e[1m\e[32m5. Sedang download snapshot... \e[0m" && sleep 1
 # snapshot
 quicksilverd tendermint unsafe-reset-all --home $HOME/.quicksilverd
 
