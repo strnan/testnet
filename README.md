@@ -6,6 +6,8 @@
 </p>
 
 ### Daftar Isi :
+<blockquote>
+    
 - [Hapus Data Quicksilver](https://github.com/yantodotid/Testnet/blob/main/README.md#hapus-data-quicksilver)
 - [Install QuickSilver](https://github.com/yantodotid/Testnet/blob/main/README.md#install-quicksilver)
 - [Sinkronisasi](https://github.com/yantodotid/Testnet/blob/main/README.md#sinkronisasi)
@@ -13,6 +15,8 @@
 - [Ambil Data Snapshot](https://github.com/yantodotid/Testnet/blob/main/README.md#ambil-data-snapshot)
 - [Jalankan Node](https://github.com/yantodotid/Testnet/blob/main/README.md#jalankan-node)
 - [Restore Validator dan Wallet](https://github.com/yantodotid/Testnet/blob/main/README.md#restore-validator-dan-wallet)
+    
+</blockquote>
 
 
 # Cara Menggunakan Snapshot QuickSilver
