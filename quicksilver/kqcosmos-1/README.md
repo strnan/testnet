@@ -23,7 +23,7 @@ sudo systemctl stop icad
 ```
 cd $HOME
 
-icad tendermint unsafe-reset-all
+icad tendermint unsafe-reset-all --home ~/.ica/
 
 rm -rf $HOME/.ica/data/*
 
