@@ -137,5 +137,5 @@ sudo systemctl enable quicksilverd
 sudo systemctl restart quicksilverd
 
 echo '=============== INSTALL SELESAI ==================='
-echo -e 'Untuk cek log: \e[1m\e[32m journalctl -u quicksilverd -f -o cat \e[0m'
-echo -e "Untuk cek status sinkron: \e[1m\e[32m curl -s localhost:${QUICKSILVER_PORT}657/status | jq .result.sync_info \e[0m"
+echo -e 'Untuk cek log: \e[1m\e[32mjournalctl -u quicksilverd -f -o cat\e[0m'
+echo -e "Untuk cek status sinkron: \e[1m\e[32mcurl -s localhost:${QUICKSILVER_PORT}657/status | jq .result.sync_info\e[0m"
