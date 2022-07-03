@@ -131,6 +131,12 @@ Untuk keluar tinggal tekan tombol <code>CTRL + Z</code>.
 ## Restore Validator dan Wallet
 Untuk bagian ini jika validator kalian masih tetap merah tetapi status sudah false bisa lakukan cara ini.
 
+- Stop dahulu nodenya.
+
+```
+sudo systemctl stop quicksilverd
+```
+
 - Buka file <code>priv_validator_key.json</code> untuk di edit.
 
 ```
@@ -143,10 +149,10 @@ Hapus semua isinya dan ganti dengan <code>priv_validator_key.json</code> yang su
 ```
 quicksilverd keys add wallet --recover
 ```
-setelah memasukkan mnemonicnya, lalu restart Nodenya dan selamat kalian sudah selesai sinkronisasi QuickSilver dengan cepat!
+setelah memasukkan mnemonicnya, lalu jalankan kembali Nodenya dan selamat kalian sudah selesai sinkronisasi QuickSilver dengan cepat!
 
 ```
-sudo systemctl restart quicksilverd
+sudo systemctl start quicksilverd
 ```
 
 ### Source
