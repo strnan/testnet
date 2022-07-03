@@ -93,6 +93,11 @@ URL="https://snapshot.testnet.run/testnet/quicksilver/killerqueen-1_2022-07-02.t
 
 wget -O - $URL | tar -xvf - -C $HOME/.quicksilverd/data
 ```
+Kembali lagi ke Home :
+
+```
+cd $HOME
+```
 
 ## Jalankan Node
 Setelah selesai download, kalian langsung saja start Node kalian untuk memastikan kalau snapshot kalian sudah berjalan dengan lancar.
