@@ -176,9 +176,13 @@ sudo systemctl start quicksilverd
 ```
 
 ### Source
-> - [Official Instruction](https://github.com/ingenuity-build/testnets)
+<blockquote>
+    
+- [Official Instruction](https://github.com/ingenuity-build/testnets)
 
-> - [KjNodes](https://github.com/kj89/testnet_manuals/tree/main/quicksilver)
+- [KjNodes](https://github.com/kj89/testnet_manuals/tree/main/quicksilver)
 
-> - [TestNetRun](https://snapshot.testnet.run/testnet/quicksilver/)
+- [TestNetRun](https://snapshot.testnet.run/testnet/quicksilver/)
+    
+</blockquote>
 
