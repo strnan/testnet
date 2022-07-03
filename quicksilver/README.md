@@ -8,7 +8,7 @@
 ### Daftar Isi :
 <blockquote>
     
-- [Hapus Data Quicksilver](https://github.com/yantodotid/Testnet/tree/main/quicksilver#cara-menggunakan-snapshot-quicksilver)
+- [Hapus Data Quicksilver](https://github.com/yantodotid/Testnet/tree/main/quicksilver#cara-menggunakan-snapshot-quicksilver-killerqueen-1)
 - [Install QuickSilver](https://github.com/yantodotid/Testnet/tree/main/quicksilver#install-quicksilver)
 - [Sinkronisasi](https://github.com/yantodotid/Testnet/tree/main/quicksilver#sinkronisasi)
 - [Update QuickSilver ke versi v0.4.1](https://github.com/yantodotid/Testnet/tree/main/quicksilver#update-quicksilver-ke-versi-v041)
@@ -19,7 +19,7 @@
 </blockquote>
 
 
-# Cara Menggunakan Snapshot QuickSilver
+# Cara Menggunakan Snapshot QuickSilver Killerqueen-1
 
 
 Cara ini digunakan untuk mempercepat sinkronisasi Quicksilver dalam waktu 5-10 menit saja.
