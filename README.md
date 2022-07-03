@@ -90,6 +90,12 @@ sudo chmod +x ./build/quicksilverd && sudo mv ./build/quicksilverd /usr/local/bi
 
 cd $HOME
 ```
+- Cek versi terbarunya.
+
+```
+quicksilverd version
+```
+Jika sudah muncul <code>v0.4.1</code> maka sudah memakai versi terbarunya, lanjut ke step selanjutnya.
 
 ## Ambil Data Snapshot 
 Dibagian ini kalian diharuskan men-download data snapshot untuk mempercepat sinkronisasi dalam waktu 5-10 menit saja. Kalian akan melakukan download data snapshot dan tunggu hingga 100%. <code>***Ingat, lakukan command satu persatu agar tidak terjadi error!***</code>
