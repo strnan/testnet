@@ -1,13 +1,13 @@
 #!/bin/bash
 echo "=================================================="
 echo -e "\033[0;35m"
-echo " :::    ::: ::::::::::: ::::    :::  ::::::::  :::::::::  :::::::::: ::::::::  ";
-echo " :+:   :+:      :+:     :+:+:   :+: :+:    :+: :+:    :+: :+:       :+:    :+: ";
-echo " +:+  +:+       +:+     :+:+:+  +:+ +:+    +:+ +:+    +:+ +:+       +:+        ";
-echo " +#++:++        +#+     +#+ +:+ +#+ +#+    +:+ +#+    +:+ +#++:++#  +#++:++#++ ";
-echo " +#+  +#+       +#+     +#+  +#+#+# +#+    +#+ +#+    +#+ +#+              +#+ ";
-echo " #+#   #+#  #+# #+#     #+#   #+#+# #+#    #+# #+#    #+# #+#       #+#    #+# ";
-echo " ###    ###  #####      ###    ####  ########  #########  ########## ########  ";
+echo " ::::::::::       ::::       ::::    :::   :::      :::  ::::::::  :::::::::  :::::::::: :::::::::  ";
+echo "       :+:       :+::+:      :+:+:   :+:   :+::+    :+: :+:    :+: :+:    :+: :+:        :+:    :+: ";
+echo "      +:+       +:+  :+:     :+:+:+  +:+   :+:+:+   +:+ +:+    +:+ +:+    +:+ +:+        +:+        ";
+echo "     +#+       +#+    +#+    +:+ +#+ +#+   +:+ +#+  +#+ +:+    +#+ +:+    +#+ +#++#+#+   +#++:++#++ ";
+echo "    +#+       +#++#++#++#+   +#+  #+#+#+   +#+  +#+ +#+ +#+    +#+ +#+    +#+ +#+               +#+ ";
+echo "   #+#       #+#        #+#  #+#   #+#+#   #+#   #+##+# #+#    #+# +#+    #+# #+#        #+#    #+# ";
+echo " ########## ###          ### ###    ####   ###    #####  ########  #########  ##########  ########  ";
 echo -e "\e[0m"
 echo "=================================================="
 
@@ -15,7 +15,7 @@ sleep 2
 
 # set vars
 if [ ! $NODENAME ]; then
-	read -p "Enter node name: " NODENAME
+	read -p "Masukkan nama node: " NODENAME
 	echo 'export NODENAME='$NODENAME >> $HOME/.bash_profile
 fi
 QUICKSILVER_PORT=11
@@ -27,18 +27,18 @@ echo "export QUICKSILVER_PORT=${QUICKSILVER_PORT}" >> $HOME/.bash_profile
 source $HOME/.bash_profile
 
 echo '================================================='
-echo -e "Your node name: \e[1m\e[32m$NODENAME\e[0m"
-echo -e "Your wallet name: \e[1m\e[32m$WALLET\e[0m"
-echo -e "Your chain name: \e[1m\e[32m$QUICKSILVER_CHAIN_ID\e[0m"
-echo -e "Your port: \e[1m\e[32m$QUICKSILVER_PORT\e[0m"
+echo -e "Nama Node: \e[1m\e[32m$NODENAME\e[0m"
+echo -e "Name Wallet: \e[1m\e[32m$WALLET\e[0m"
+echo -e "Nama Chain: \e[1m\e[32m$QUICKSILVER_CHAIN_ID\e[0m"
+echo -e "Port: \e[1m\e[32m$QUICKSILVER_PORT\e[0m"
 echo '================================================='
 sleep 2
 
-echo -e "\e[1m\e[32m1. Updating packages... \e[0m" && sleep 1
+echo -e "\e[1m\e[32m1. Update paket... \e[0m" && sleep 1
 # update
 sudo apt update && sudo apt upgrade -y
 
-echo -e "\e[1m\e[32m2. Installing dependencies... \e[0m" && sleep 1
+echo -e "\e[1m\e[32m2. Install aplikasi yang diperlukan... \e[0m" && sleep 1
 # packages
 sudo apt install curl build-essential git wget jq make gcc tmux -y
 
@@ -53,7 +53,7 @@ echo "export PATH=$PATH:/usr/local/go/bin:$HOME/go/bin" >> ~/.bash_profile
 source ~/.bash_profile
 go version
 
-echo -e "\e[1m\e[32m3. Downloading and building binaries... \e[0m" && sleep 1
+echo -e "\e[1m\e[32m3. Sedang download dan membuat binaries... \e[0m" && sleep 1
 # download binary
 cd $HOME
 rm quicksilver -rf
@@ -124,6 +124,6 @@ sudo systemctl daemon-reload
 sudo systemctl enable quicksilverd
 sudo systemctl restart quicksilverd
 
-echo '=============== SETUP FINISHED ==================='
-echo -e 'To check logs: \e[1m\e[32mjournalctl -u quicksilverd -f -o cat\e[0m'
-echo -e "To check sync status: \e[1m\e[32mcurl -s localhost:${QUICKSILVER_PORT}657/status | jq .result.sync_info\e[0m"
+echo '=============== INSTALL SELESAI ==================='
+echo -e 'Untuk cek Log: \e[1m\e[32mjournalctl -u quicksilverd -f -o cat\e[0m'
+echo -e "Untuk cek status sinkron: \e[1m\e[32mcurl -s localhost:${QUICKSILVER_PORT}657/status | jq .result.sync_info\e[0m"
