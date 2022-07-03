@@ -141,7 +141,7 @@ quicksilverd status 2>&1 | jq .SyncInfo
 
 - Cek Log (Opsional)
 
-Hanya untuk memastikan kalau sudah jalan blocknya, kalian bisa skip bagian ini jika sudah muncul blocknya.
+    Hanya untuk memastikan kalau sudah jalan blocknya, kalian bisa skip bagian ini jika sudah muncul blocknya.
 
 ```
 sudo journalctl -u quicksilverd -f -o cat
