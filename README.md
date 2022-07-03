@@ -131,7 +131,11 @@ Semua isinya dengan <code>priv_validator_key.json</code> yang sudah kalian simpa
 ```
 quicksilverd keys add wallet --recover
 ```
-setelah memasukkan mnemonicnya, lalu hidupkan Nodenya dan selamat kalian sudah selesai sinkronisasi QuickSilver dengan cepat!
+setelah memasukkan mnemonicnya, lalu restart Nodenya dan selamat kalian sudah selesai sinkronisasi QuickSilver dengan cepat!
+
+```
+sudo systemctl restart quicksilverd
+```
 
 ### Source
 > - [Official Instruction](https://github.com/ingenuity-build/testnets)
