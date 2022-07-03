@@ -5,7 +5,7 @@
     <img width="10%"  src="https://user-images.githubusercontent.com/50621007/166148846-93575afe-e3ce-4ca5-a3f7-a21e8a8609cb.png">
 </p>
 
-Daftar Isi :
+### Daftar Isi :
 - [Hapus Data Quicksilver](https://github.com/yantodotid/Testnet/blob/main/README.md#hapus-data-quicksilver)
 - [Install QuickSilver](https://github.com/yantodotid/Testnet/blob/main/README.md#install-quicksilver)
 - [Sinkronisasi](https://github.com/yantodotid/Testnet/blob/main/README.md#sinkronisasi)
