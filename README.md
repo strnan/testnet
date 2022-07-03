@@ -160,7 +160,7 @@ sudo systemctl stop quicksilverd
 ```
 nano .quicksilverd/config/priv_validator_key.json
 ```
-Hapus semua isinya dan ganti dengan <code>priv_validator_key.json</code> yang sudah kalian simpan sebelumnya, setelah selesai tekan tombol <code>CTRL + O</code> dan <code>CTRL + X</code>.
+Hapus semua isinya dan ganti dengan <code>priv_validator_key.json</code> yang sudah kalian simpan sebelumnya, setelah selesai tekan tombol <code>CTRL+O</code> dan <code>CTRL+X</code>.
 
 - Import Mnemonic Akun QuickSilver
 
