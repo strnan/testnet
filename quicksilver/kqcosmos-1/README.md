@@ -25,6 +25,8 @@ cd $HOME
 
 icad tendermint unsafe-reset-all
 
+rm -rf $HOME/.ica/data/*
+
 URL="https://snapshot.testnet.run/testnet/kqcosmos/killerqueen-1_2022-06-30.tar"
 
 wget -O - $URL | tar -xvf - -C $HOME/.ica/data
@@ -57,6 +59,17 @@ icad status 2>&1 | jq .SyncInfo
   "catching_up": true
 }
 ```
+
+- Cek Log (Opsional)
+
+    Hanya untuk memastikan kalau sudah jalan blocknya, kalian bisa skip bagian ini jika sudah muncul blocknya.
+
+```
+sudo journalctl -u icad -f -o cat
+```
+
+Untuk keluar tinggal tekan tombol <code>CTRL + Z</code>.
+
 Jika sudah selesai maka <code>"catching_up": true</code> akan berubah ke <code>"catching_up": false</code> dan selamat kalian sudah melakukan sinkronisasi dengan cepat tanpa menunggu lama berhari hari.
 
 ## Source
