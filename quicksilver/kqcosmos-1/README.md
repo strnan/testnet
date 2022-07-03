@@ -9,6 +9,13 @@
 Cara ini digunakan untuk mempercepat sinkronisasi pada jaringan <code>kqcosmos-1</code> dari <code>Quicksilver</code>.
 Sebelum melakukan Snapshot, pastikan kalian sudah backup file <code>priv_validator_key.json</code> dan <code>mnemonic</code> agar jika ada kesalahan masih bisa recovery akun validator dan wallet kalian.
 
+## Backup Data
+Untuk bagian ini hanya untuk kalian yang belum mem-backup <code>priv_validator_key.json</code> saja. Jika kalian sudah menyimpannya, bisa abaikan step bagian ini.
+```
+nano .ica/config/priv_validator_key.json
+```
+Lalu copy isi data tersebut dan simpan dalam notepad kalian atau catatan. Setelah itu keluar dari nano dengan tekan <code>CTRL+X</code>.
+
 ## Ambil Data Snapshot KQCOSMOS-1
 Dibagian ini kalian diharuskan men-download data snapshot untuk mempercepat sinkronisasi dalam waktu 5-10 menit saja. Kalian akan melakukan download data snapshot dan tunggu hingga 100%. <code>***Ingat, lakukan command satu persatu agar tidak terjadi error!***</code>
 
@@ -71,6 +78,23 @@ sudo journalctl -u icad -f -o cat
 Untuk keluar tinggal tekan tombol <code>CTRL + Z</code>.
 
 Jika sudah selesai maka <code>"catching_up": true</code> akan berubah ke <code>"catching_up": false</code> dan selamat kalian sudah melakukan sinkronisasi dengan cepat tanpa menunggu lama berhari hari.
+
+## Recovery Data
+Setelah selesai sinkronisasi, kembalikan lagi data penting kalian tadi seperti <code>mnemonic</code> (seharusnya sudah kalian simpan saat pertama kali membuat wallet) dan <code>priv_validator_key</code>.
+- Add Wallet
+```
+icad keys add nama_wallet --recover --keyring-backend=test
+```
+<code>--keyring-backend=test</code> digunakan agar tidak perlu memasukkan password saat melakukan transaksi, tetapi kalian bebas untuk menggunakan atau tidak.
+
+- Edit Validator
+
+```
+nano .ica/config/priv_validator_key.json
+```
+Lalu hapus isinya dan masukkan kode yang sudah kalian simpan dalam notepad atau catatan. Kemudian tekan <code>CTRL+X</code> dan <code>Yes</code>. 
+
+Selamat, kalian sudah selesai melakukan snapshot dan recovery data kalian dengan aman, Happy Testnet!
 
 ## Source
 <blockquote>
