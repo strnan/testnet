@@ -24,7 +24,7 @@ sudo rm $HOME/quicksilver -rf
 Install Quicksilver dari awal dan jika kalian baru pertama kali install QuickSilver harap lakukan command ini terlebih dahulu sebelum memulai install.
 
 ```
-sudo apt install && apt upgrade
+sudo apt install && sudo apt upgrade
 ```
 Setelah itu lakukan install Quicksilver.
 
