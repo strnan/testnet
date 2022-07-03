@@ -74,11 +74,18 @@ Update Quicksilver ke versi yang terbaru, karena versi yang saat ini kalian inst
 
 ```
 cd $HOME
+
 rm quicksilver -rf
+
 git clone https://github.com/ingenuity-build/quicksilver.git --branch v0.4.1
+
 cd quicksilver
+
 make build
+
 sudo chmod +x ./build/quicksilverd && sudo mv ./build/quicksilverd /usr/local/bin/quicksilverd
+
+cd $HOME
 ```
 
 ## Ambil Data Snapshot 
