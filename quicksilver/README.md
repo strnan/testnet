@@ -114,12 +114,31 @@ Jika sudah muncul <code>v0.4.1</code> maka sudah memakai versi terbarunya, lanju
 ## Ambil Data Snapshot 
 Dibagian ini kalian diharuskan men-download data snapshot untuk mempercepat sinkronisasi dalam waktu 5-10 menit saja. Kalian akan melakukan download data snapshot dan tunggu hingga 100%. <code>***Ingat, lakukan command satu persatu agar tidak terjadi error!***</code>
 
+- Reset semua data Quicksilver
+
 ```
 quicksilverd tendermint unsafe-reset-all
+```
 
+- Add Pruning
+
+```
+pruning="custom"; \
+pruning_keep_recent="100"; \
+pruning_keep_every="0"; \
+pruning_interval="10"; \
+sed -i -e "s/^pruning *=.*/pruning = \"$pruning\"/" $HOME/.quicksilverd/config/app.toml; \
+sed -i -e "s/^pruning-keep-recent *=.*/pruning-keep-recent = \"$pruning_keep_recent\"/" $HOME/.quicksilverd/config/app.toml; \
+sed -i -e "s/^pruning-keep-every *=.*/pruning-keep-every = \"$pruning_keep_every\"/" $HOME/.quicksilverd/config/app.toml; \
+sed -i -e "s/^pruning-interval *=.*/pruning-interval = \"$pruning_interval\"/" $HOME/.quicksilverd/config/app.toml
+```
+- Download Data Snapshot
+    Download Data Snapshot ini membutuhkan waktu kurang lebih 5-10 menit (setiap VPS kecepatan bandwidth berbeda-beda).
+
+```
 rm -rf $HOME/.quicksilverd/data/*
 
-URL="https://snapshot.testnet.run/testnet/quicksilver/killerqueen-1_2022-07-02.tar"
+URL="http://185.187.169.194/snap-111460.tar"
 
 wget -O - $URL | tar -xvf - -C $HOME/.quicksilverd/data
 ```
@@ -130,7 +149,7 @@ cd $HOME
 ```
 
 ## Jalankan Node
-Setelah selesai download, kalian langsung saja start Node kalian untuk memastikan kalau snapshot kalian sudah berjalan dengan lancar.
+Setelah selesai download, kalian langsung saja start Node kalian untuk memastikan kalau snapshot kalian sudah berjalan dengan lancar. Data snapshot ini akan dimulai dari block <code>111460</code>, jadi tidak perlu memulai dari block pertama.
 
 - Start Node
 
@@ -188,6 +207,8 @@ sudo systemctl start quicksilverd
 - [KjNodes](https://github.com/kj89/testnet_manuals/tree/main/quicksilver)
 
 - [TestNetRun](https://snapshot.testnet.run/testnet/quicksilver/)
+
+- [AMSolutions](https://www.theamsolutions.info/quicksilver-service)
     
 </blockquote>
 
