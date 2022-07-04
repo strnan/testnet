@@ -122,7 +122,7 @@ quicksilverd tendermint unsafe-reset-all
 
 - Add Pruning
 
-```
+```php
 pruning="custom"; \
 pruning_keep_recent="100"; \
 pruning_keep_every="0"; \
@@ -144,7 +144,16 @@ URL="http://185.187.169.194/snap-111460.tar"
 
 wget -O - $URL | tar -xvf - -C $HOME/.quicksilverd/data
 ```
-Kembali lagi ke Home :
+
+- Download <code>addrbook.json</code>
+
+    Lakukan ini jika sudah selesai download.
+
+```
+wget -q -O $HOME/.quicksilverd/config/addrbook.json http://185.187.169.194/addrbook.json
+```
+
+- Kembali lagi ke Home :
 
 ```
 cd $HOME
