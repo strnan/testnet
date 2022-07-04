@@ -23,7 +23,7 @@
 # Cara Menggunakan Snapshot QuickSilver <code>KILLERQUEEN-1</code>
 
 
-Cara ini digunakan untuk mempercepat sinkronisasi Quicksilver dalam waktu 5-10 menit saja.
+Cara ini digunakan untuk mempercepat sinkronisasi Quicksilver dalam waktu 30-60 menit saja. Ini tergantung spek VPS-nya, mungkin bisa cepat atau lambat (yang jelas tidak menunggu berhari-hari).
 
 ## Hapus data QuickSilver
 Sebelum melakukan ini, harap backup data-data penting kalian seperti <code>priv_validator_key.json</code> dan <code>mnemonic</code> kalian! Karena jika tidak, maka kalian ***tidak akan bisa menjalankan validatornya dan kehilangan selamanya!*** Jika kalian baru pertama kali menggunakan Quicksilver, kalian bisa **abaikan** bagian ini.
