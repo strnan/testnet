@@ -132,7 +132,9 @@ sed -i -e "s/^pruning-keep-recent *=.*/pruning-keep-recent = \"$pruning_keep_rec
 sed -i -e "s/^pruning-keep-every *=.*/pruning-keep-every = \"$pruning_keep_every\"/" $HOME/.quicksilverd/config/app.toml; \
 sed -i -e "s/^pruning-interval *=.*/pruning-interval = \"$pruning_interval\"/" $HOME/.quicksilverd/config/app.toml
 ```
+
 - Download Data Snapshot
+
     Download Data Snapshot ini membutuhkan waktu kurang lebih 5-10 menit (setiap VPS kecepatan bandwidth berbeda-beda).
 
 ```
