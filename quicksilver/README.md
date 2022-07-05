@@ -66,7 +66,7 @@ wget -O quicksilver.sh https://raw.githubusercontent.com/yantodotid/testnet/main
     
    Untuk kalian yang baru pertama kali mengikuti QuickSilver Testnet, kalian pertama harus join grup discord untuk mendapatkan QCK Faucetnya. [Link Discord](https://discord.gg/r6YU9yWfgQ)
     
-  - Masuk ke channel <code>#qck-tap</code> dan masukkan address kalian (ganti quick_address dengan address yang sudah kalian buat tadi dibagian [List Wallet](https://github.com/yantodotid/testnet/tree/main/quicksilver#list-wallet).
+  - Masuk ke channel <code>#qck-tap</code> dan masukkan address kalian (ganti quick_address dengan address yang sudah kalian buat tadi dibagian [List Wallet](https://github.com/yantodotid/testnet/blob/main/quicksilver/README.md#list-wallet).
 
    ```
    $request quick_address killerqueen
