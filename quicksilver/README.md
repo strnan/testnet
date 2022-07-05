@@ -33,6 +33,13 @@ wget -O quicksilver.sh https://raw.githubusercontent.com/yantodotid/testnet/main
    quicksilverd keys add nama_wallet
    ```
    
+   - Simpan <code>Mnemonic</code> dan kalian bisa temukan dibawah tulisan ini setelah membuat wallet.
+   
+   ```
+**Important** write this mnemonic phrase in a safe place.
+It is the only way to recover your account if you ever forget your password.
+   ```
+   
 ### Recovery Wallet
     
    Jika kalian sudah punya wallet, bisa langsung recover dengan menggunakan mnemonic kalian. Ingat **nama_wallet** ganti dengan nama kalian!
