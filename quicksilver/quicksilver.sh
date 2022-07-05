@@ -11,7 +11,7 @@ echo " ########## ###          ### ###    ####   ###    #####  ########  #######
 echo -e "\e[0m"
 echo "=================================================="
 echo -e "\e[1m\e[32mQuicksilver v0.4.1 dan Sudah termasuk Snaphot agar cepat sinkronisasi\e[0m"
-echo -e "\e[1m\e[32mSumber dari KjNodes dan TestNetRun\e[0m"
+echo -e "\e[1m\e[32mSumber dari KjNodes dan AMSolutions\e[0m"
 
 sleep 2
 
@@ -127,9 +127,13 @@ quicksilverd tendermint unsafe-reset-all --home $HOME/.quicksilverd
 
 rm -rf $HOME/.quicksilverd/data/*
 
-URL="https://snapshot.testnet.run/testnet/quicksilver/killerqueen-1_2022-07-02.tar"
+URL="http://185.187.169.194/snap-137110.tar"
 
 wget -O - $URL | tar -xvf - -C $HOME/.quicksilverd/data
+
+echo -e "\e[1m\e[32m6. Sedang download addrbook.json... \e[0m" && sleep 1
+
+wget -q -O $HOME/.quicksilverd/config/addrbook.json https://raw.githubusercontent.com/yantodotid/testnet/main/quicksilver/addrbook.json
 
 # start service
 sudo systemctl daemon-reload
