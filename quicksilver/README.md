@@ -76,7 +76,7 @@ wget -O quicksilver.sh https://raw.githubusercontent.com/yantodotid/testnet/main
    ```
    $balance quick_address killerqueen
    ```
-   atau
+   
    
   - Cek Balance di VPS kalian dengan command berikut. (Balance akan muncul jika <code>latest_block_height</code> sudah mencapai yang terbaru).
   
