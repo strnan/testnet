@@ -64,17 +64,29 @@ wget -O quicksilver.sh https://raw.githubusercontent.com/yantodotid/testnet/main
     
 ### Request Faucet
     
-   Untuk kalian yang baru pertama kali mengikuti QuickSilver Testnet, kalian pertama harus join grup discord untuk mendapatkan QCK Faucetnya. [Link Discord](https://discord.gg/r6YU9yWfgQ)
+   Untuk request faucet, pastikan status node kalian sudah <code>false</code>. Untuk cek statusnya, bisa lihat bagian ini [Cek Status Sinkron](https://github.com/yantodotid/testnet/blob/main/quicksilver/README.md#cek-status-sinkron). Untuk kalian yang baru pertama kali mengikuti QuickSilver Testnet, kalian pertama harus join grup discord untuk mendapatkan QCK Faucetnya. [Link Discord](https://discord.gg/r6YU9yWfgQ)
     
   - Masuk ke channel <code>#qck-tap</code> dan masukkan address kalian (ganti quick_address dengan address yang sudah kalian buat tadi dibagian [List Wallet](https://github.com/yantodotid/testnet/blob/main/quicksilver/README.md#list-wallet).
 
    ```
    $request quick_address killerqueen
    ```
-    
+  - Cek Balance QCK di Discord channel <code>#qck-tap</code>
+  
+   ```
+   $balance quick_address killerqueen
+   ```
+   atau
+   
+  - Cek Balance di VPS kalian dengan command berikut. (Balance akan muncul jika <code>latest_block_height</code> sudah mencapai yang terbaru).
+  
+   ```
+   quicksilverd q bank balances quick_address
+   ```  
+   
 ### Create Validator
    
-   Setelah request faucet, kalian buat validatornya dengan command berikut ini.
+   Setelah request faucet dan saldo QCK sudah masuk, kalian buat validatornya dengan command berikut ini.
    
    --from="**nama_wallet**" dan --moniker="**nama_validator**" tulisan yang ditebalkan ganti dengan nama kalian.
    
