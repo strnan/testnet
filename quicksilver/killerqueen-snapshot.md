@@ -8,14 +8,14 @@
 ### Daftar Isi :
 <blockquote>
     
-- [Cara Menggunakan Snapshot Killerqueen-1](https://github.com/yantodotid/Testnet/tree/main/quicksilver#cara-menggunakan-snapshot-quicksilver-killerqueen-1)
-- [Hapus data QuickSilver](https://github.com/yantodotid/Testnet/tree/main/quicksilver#hapus-data-quicksilver)
-- [Install QuickSilver](https://github.com/yantodotid/Testnet/tree/main/quicksilver#install-quicksilver)
-- [Sinkronisasi](https://github.com/yantodotid/Testnet/tree/main/quicksilver#sinkronisasi)
-- [Update QuickSilver ke versi v0.4.1](https://github.com/yantodotid/Testnet/tree/main/quicksilver#update-quicksilver-ke-versi-v041)
-- [Ambil Data Snapshot](https://github.com/yantodotid/Testnet/tree/main/quicksilver#ambil-data-snapshot)
-- [Jalankan Node](https://github.com/yantodotid/Testnet/tree/main/quicksilver#jalankan-node)
-- [Restore Validator dan Wallet](https://github.com/yantodotid/Testnet/tree/main/quicksilver#restore-validator-dan-wallet)
+- [Cara Menggunakan Snapshot Killerqueen-1](https://github.com/yantodotid/testnet/blob/main/quicksilver/killerqueen-snapshot.md#cara-menggunakan-snapshot-quicksilver-killerqueen-1)
+- [Hapus data QuickSilver](https://github.com/yantodotid/Testnet/tree/main/quicksilver/killerqueen-snapshot.md#hapus-data-quicksilver)
+- [Install QuickSilver](https://github.com/yantodotid/Testnet/tree/main/quicksilver/killerqueen-snapshot.md#install-quicksilver)
+- [Sinkronisasi](https://github.com/yantodotid/Testnet/tree/main/quicksilver/killerqueen-snapshot.md#sinkronisasi)
+- [Update QuickSilver ke versi v0.4.1](https://github.com/yantodotid/Testnet/tree/main/quicksilver/killerqueen-snapshot.md#update-quicksilver-ke-versi-v041)
+- [Ambil Data Snapshot](https://github.com/yantodotid/Testnet/tree/main/quicksilver/killerqueen-snapshot.md#ambil-data-snapshot)
+- [Jalankan Node](https://github.com/yantodotid/Testnet/tree/main/quicksilver/killerqueen-snapshot.md#jalankan-node)
+- [Restore Validator dan Wallet](https://github.com/yantodotid/Testnet/tree/main/quicksilver/killerqueen-snapshot.md#restore-validator-dan-wallet)
     
 </blockquote>
 
