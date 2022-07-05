@@ -7,7 +7,7 @@
 
 # Quicksilver Node Full Setup
   
-  Untuk versi ini sudah termasuk versi <code>v0.4.1</code> dan data snapshot (langsung lompat ke block <code>104000~</code> tanpa harus memulai dari block pertama).
+  Untuk versi ini sudah termasuk versi <code>v0.4.1</code> dan data snapshot (langsung lompat ke block <code>137000~</code> tanpa harus memulai dari block pertama).
   
 ## Install Full Setup
 
