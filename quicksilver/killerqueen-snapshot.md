@@ -28,6 +28,16 @@ Cara ini digunakan untuk mempercepat sinkronisasi Quicksilver dalam waktu 30-60 
 ## Hapus data QuickSilver
 Sebelum melakukan ini, harap backup data-data penting kalian seperti <code>priv_validator_key.json</code> dan <code>mnemonic</code> kalian! Karena jika tidak, maka kalian ***tidak akan bisa menjalankan validatornya dan kehilangan selamanya!*** Jika kalian baru pertama kali menggunakan Quicksilver, kalian bisa **abaikan** bagian ini.
 
+- Backup <code>priv_validator_key.json</code>
+    Lakukan ini jika memang sebelumnya validator kalian sudah jalan.
+
+```
+nano .quicksilverd/config/priv_validator_key.json
+```
+Copy semua isinya dan simpan kedalam notepad atau catatan. Untuk <code>Mnemonic</code> kalian bisa temukan saat pertama kali membuat wallet.
+
+- Delete Semua data Quicksilver setelah melakukan backup.
+
 ```
 sudo systemctl stop quicksilverd
 sudo systemctl disable quicksilverd
