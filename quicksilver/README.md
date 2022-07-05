@@ -121,5 +121,6 @@ It is the only way to recover your account if you ever forget your password.
   - [Official Instructions (Install Nodes)](https://github.com/ingenuity-build/testnets/blob/main/killerqueen/INSTALL.md)
   - [KjNodes (Script and Tutorial)](https://github.com/kj89/testnet_manuals/tree/main/quicksilver)
   - [TestNetRun (Snapshot Data)](https://snapshot.testnet.run/testnet/quicksilver/)
+  - [AMSolutions (Snapshot Data)](https://www.theamsolutions.info/quicksilver-service)
   
 </blockquote>
