@@ -126,8 +126,10 @@ Dibagian ini kalian diharuskan men-download data snapshot untuk mempercepat sink
 
 - Reset semua data Quicksilver
 
+    Pastikan semua data yang penting seperti <code>priv_validator_key.json</code> dan <code>mnemonic</code> sudah disimpan dalam catatan atau notepad kalian.
+
 ```
-quicksilverd tendermint unsafe-reset-all
+quicksilverd tendermint unsafe-reset-all --home $HOME/.quicksilverd
 ```
 
 - Download Data Snapshot
@@ -135,11 +137,18 @@ quicksilverd tendermint unsafe-reset-all
     Download Data Snapshot ini membutuhkan waktu kurang lebih 5-10 menit (setiap VPS kecepatan bandwidth berbeda-beda).
 
 ```
-rm -rf $HOME/.quicksilverd/data/*
+cd $HOME/.quicksilverd; rm -rf data \
+&& wget http://185.187.169.194/snap-137110.tar  #( 3.4 GB )
 
-URL="https://snapshot.testnet.run/testnet/quicksilver/killerqueen-1_2022-07-02.tar"
+tar xvf snap-137110.tar
+```
 
-wget -O - $URL | tar -xvf - -C $HOME/.quicksilverd/data
+- Download addrbook.json
+
+    Untuk mendapatkan peers agar bisa mempercepat menemukan block.
+
+```
+wget -O ~/.quicksilverd/config/addrbook.json https://raw.githubusercontent.com/yantodotid/testnet/main/quicksilver/addrbook.json
 ```
 
 - Kembali lagi ke Home :
@@ -206,7 +215,7 @@ sudo systemctl start quicksilverd
 
 - [KjNodes](https://github.com/kj89/testnet_manuals/tree/main/quicksilver)
 
-- [TestNetRun](https://snapshot.testnet.run/testnet/quicksilver/)
+- [AMSolutions](https://www.theamsolutions.info/quicksilver-service)
 
 
     
