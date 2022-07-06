@@ -125,11 +125,12 @@ echo -e "\e[1m\e[32m5. Sedang download snapshot... \e[0m" && sleep 1
 # snapshot
 quicksilverd tendermint unsafe-reset-all --home $HOME/.quicksilverd
 
-rm -rf $HOME/.quicksilverd/data/*
+cd $HOME/.quicksilverd; rm -rf data \
+&& wget http://185.187.169.194/snap-137110.tar  #( 3.4 GB )
 
-URL="http://185.187.169.194/snap-137110.tar"
+tar xvf snap-137110.tar
 
-wget -O - $URL | tar -xvf - -C $HOME/.quicksilverd/data
+cd $HOME
 
 echo -e "\e[1m\e[32m6. Sedang download addrbook.json... \e[0m" && sleep 1
 
