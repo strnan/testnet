@@ -11,7 +11,7 @@ echo " ########## ###      ### ###    ####   ### #########  ###    #### ";
 echo -e "\e[0m"
 echo "=================================================="
 echo -e "\e[1m\e[32mQuicksilver v0.4.1 dan Sudah termasuk Snaphot agar cepat sinkronisasi\e[0m"
-echo -e "\e[1m\e[32mSumber dari KjNodes dan AMSolutions\e[0m"
+echo -e "\e[1m\e[32mSumber dari KjNodes, AMSolutions dan TestNetRun\e[0m"
 
 sleep 2
 
@@ -125,10 +125,11 @@ echo -e "\e[1m\e[32m5. Sedang download snapshot... \e[0m" && sleep 1
 # snapshot
 quicksilverd tendermint unsafe-reset-all --home $HOME/.quicksilverd
 
-cd $HOME/.quicksilverd; rm -rf data \
-&& wget http://185.187.169.194/snap-137110.tar  #( 3.4 GB )
+rm -rf $HOME/.quicksilverd/data/*
 
-tar xvf snap-137110.tar
+URL="https://snapshot.testnet.run/testnet/quicksilver/killerqueen-1_2022-07-06.tar"
+
+wget -O - $URL | tar -xvf - -C $HOME/.quicksilverd/data
 
 cd $HOME
 
