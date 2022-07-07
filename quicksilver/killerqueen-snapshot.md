@@ -124,6 +124,12 @@ Jika sudah muncul <code>v0.4.1</code> maka sudah memakai versi terbarunya, lanju
 ## Ambil Data Snapshot 
 Dibagian ini kalian diharuskan men-download data snapshot untuk mempercepat sinkronisasi dalam waktu 5-10 menit saja. Kalian akan melakukan download data snapshot dan tunggu hingga 100%. <code>***Ingat, lakukan command satu persatu agar tidak terjadi error!***</code>
 
+- Stop Node
+
+```
+sudo systemctl stop quicksilverd
+```
+
 - Reset semua data Quicksilver
 
     Pastikan semua data yang penting seperti <code>priv_validator_key.json</code> dan <code>mnemonic</code> sudah disimpan dalam catatan atau notepad kalian.
