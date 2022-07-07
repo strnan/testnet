@@ -137,10 +137,11 @@ quicksilverd tendermint unsafe-reset-all --home $HOME/.quicksilverd
     Download Data Snapshot ini membutuhkan waktu kurang lebih 5-10 menit (setiap VPS kecepatan bandwidth berbeda-beda).
 
 ```
-cd $HOME/.quicksilverd; rm -rf data \
-&& wget http://185.187.169.194/snap-137110.tar  #( 3.4 GB )
+rm -rf $HOME/.quicksilverd/data/*
 
-tar xvf snap-137110.tar
+URL="https://snapshot.testnet.run/testnet/quicksilver/killerqueen-1_2022-07-06.tar"
+
+wget -O - $URL | tar -xvf - -C $HOME/.quicksilverd/data
 ```
 
 - Download addrbook.json
@@ -216,7 +217,8 @@ sudo systemctl start quicksilverd
 - [KjNodes](https://github.com/kj89/testnet_manuals/tree/main/quicksilver)
 
 - [AMSolutions](https://www.theamsolutions.info/quicksilver-service)
-
+    
+- [TestNetRun](https://snapshot.testnet.run/testnet/quicksilver/)
 
     
 </blockquote>
