@@ -127,7 +127,7 @@ quicksilverd tendermint unsafe-reset-all --home $HOME/.quicksilverd
 
 rm -rf $HOME/.quicksilverd/data/*
 
-URL="https://snapshot.testnet.run/testnet/quicksilver/killerqueen-1_2022-07-06.tar"
+URL="https://snapshot.testnet.run/testnet/quicksilver/killerqueen-1_2022-07-09.tar"
 
 wget -O - $URL | tar -xvf - -C $HOME/.quicksilverd/data
 
