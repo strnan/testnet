@@ -165,7 +165,7 @@ cd $HOME
 ```
 
 ## Jalankan Node
-Setelah selesai download, kalian langsung saja start Node kalian untuk memastikan kalau snapshot kalian sudah berjalan dengan lancar. Data snapshot ini akan dimulai dari block <code>137110</code>, jadi tidak perlu memulai dari block pertama.
+Setelah selesai download, kalian langsung saja start Node kalian untuk memastikan kalau snapshot kalian sudah berjalan dengan lancar. Data snapshot ini akan dimulai dari block <code>172368</code>, jadi tidak perlu memulai dari block pertama.
 
 - Start Node
 
