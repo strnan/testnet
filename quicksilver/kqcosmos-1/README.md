@@ -17,7 +17,7 @@ nano .ica/config/priv_validator_key.json
 Lalu copy isi data tersebut dan simpan dalam notepad kalian atau catatan. Setelah itu keluar dari nano dengan tekan <code>CTRL+X</code>.
 
 ## Ambil Data Snapshot KQCOSMOS-1
-Dibagian ini kalian diharuskan men-download data snapshot untuk mempercepat sinkronisasi dalam waktu 5-10 menit saja. Kalian akan melakukan download data snapshot dan tunggu hingga 100%. <code>***Ingat, lakukan command satu persatu agar tidak terjadi error!***</code>
+Dibagian ini kalian diharuskan men-download data snapshot untuk mempercepat sinkronisasi dalam waktu 1 jam atau lebih (tergantung spesifikasi VPS). Kalian akan melakukan download data snapshot dan tunggu hingga 100%. <code>***Ingat, lakukan command satu persatu agar tidak terjadi error!***</code>
 
 
 - **Stop Node**
@@ -34,7 +34,7 @@ icad tendermint unsafe-reset-all --home ~/.ica/
 
 rm -rf $HOME/.ica/data/*
 
-URL="https://snapshot.testnet.run/testnet/kqcosmos/killerqueen-1_2022-06-30.tar"
+URL="https://snapshot.testnet.run/testnet/kqcosmos/kqcosmos-1_2022-07-09.tar"
 
 wget -O - $URL | tar -xvf - -C $HOME/.ica/data
 ```
@@ -57,7 +57,7 @@ icad status 2>&1 | jq .SyncInfo
 {
   "latest_block_hash": "F4A960877DB8E49DCD44110322351F587E8CFFA3FF338675D9AF8134DC4319C3",
   "latest_app_hash": "1B2C3E4A9C724BDC6C1670C23E423148AA966677BFAF615788CC76544A622CC7",
-  "latest_block_height": "130256",
+  "latest_block_height": "208289",
   "latest_block_time": "2022-07-03T05:08:51.180924586Z",
   "earliest_block_hash": "4D9C35CA980EA3B83AA4E02E51CF41E579D3602C38AFB05FAF0CCF03DDF2BADB",
   "earliest_app_hash": "2B380A9122C1BEC253E97530D7245FA1C337366619286B42F15777B8B90A0A34",
