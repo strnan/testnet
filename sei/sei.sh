@@ -15,7 +15,7 @@ sleep 2
 
 # set vars
 if [ ! $NODENAME ]; then
-	read -p "Enter node name: " NODENAME
+	read -p "Masukkan Nama Node: " NODENAME
 	echo 'export NODENAME='$NODENAME >> $HOME/.bash_profile
 fi
 SEI_PORT=12
@@ -27,18 +27,18 @@ echo "export SEI_PORT=${SEI_PORT}" >> $HOME/.bash_profile
 source $HOME/.bash_profile
 
 echo '================================================='
-echo -e "Your node name: \e[1m\e[32m$NODENAME\e[0m"
-echo -e "Your wallet name: \e[1m\e[32m$WALLET\e[0m"
-echo -e "Your chain name: \e[1m\e[32m$SEI_CHAIN_ID\e[0m"
-echo -e "Your port: \e[1m\e[32m$SEI_PORT\e[0m"
+echo -e "Nama Node Kamu: \e[1m\e[32m$NODENAME\e[0m"
+echo -e "Nama Wallet Kamu: \e[1m\e[32m$WALLET\e[0m"
+echo -e "Nama Chain: \e[1m\e[32m$SEI_CHAIN_ID\e[0m"
+echo -e "PORT Kamu: \e[1m\e[32m$SEI_PORT\e[0m"
 echo '================================================='
 sleep 2
 
-echo -e "\e[1m\e[32m1. Updating packages... \e[0m" && sleep 1
+echo -e "\e[1m\e[32m1. Update paket terbaru... \e[0m" && sleep 1
 # update
 sudo apt update && sudo apt upgrade -y
 
-echo -e "\e[1m\e[32m2. Installing dependencies... \e[0m" && sleep 1
+echo -e "\e[1m\e[32m2. Install aplikasi yang diperlukan... \e[0m" && sleep 1
 # packages
 sudo apt install curl build-essential git wget jq make gcc tmux -y
 
@@ -53,7 +53,7 @@ echo "export PATH=$PATH:/usr/local/go/bin:$HOME/go/bin" >> ~/.bash_profile
 source ~/.bash_profile
 go version
 
-echo -e "\e[1m\e[32m3. Downloading and building binaries... \e[0m" && sleep 1
+echo -e "\e[1m\e[32m3. Download dan membuat binaries... \e[0m" && sleep 1
 # download binary
 cd $HOME
 git clone https://github.com/sei-protocol/sei-chain.git && cd sei-chain
@@ -69,11 +69,12 @@ seid config node tcp://localhost:${SEI_PORT}657
 seid init $NODENAME --chain-id $SEI_CHAIN_ID
 
 # download genesis and addrbook
-curl https://raw.githubusercontent.com/sei-protocol/testnet/master/sei-incentivized-testnet/genesis.json > ~/.sei/config/genesis.json
+wget -qO $HOME/.sei/config/genesis.json "https://raw.githubusercontent.com/sei-protocol/testnet/main/sei-incentivized-testnet/genesis.json"
+wget -qO $HOME/.sei/config/addrbook.json "https://raw.githubusercontent.com/sei-protocol/testnet/main/sei-incentivized-testnet/addrbook.json"
 
 # set peers and seeds
-SEEDS=""
-PEERS=""
+SEED="df1f6617ff5acdc85d9daa890300a57a9d956e5e@sei-atlantic-1.seed.rhinostake.com:16660"
+PEERS="38b4d78c7d6582fb170f6c19330a7e37e6964212@194.163.189.114:46656,6c27c768936ff8eebde94fe898b54df71f936e48@47.156.153.124:56656"
 sed -i -e "s/^seeds *=.*/seeds = \"$SEEDS\"/; s/^persistent_peers *=.*/persistent_peers = \"$PEERS\"/" $HOME/.sei/config/config.toml
 
 # set custom ports
@@ -103,7 +104,7 @@ sed -i -e "s/prometheus = false/prometheus = true/" $HOME/.sei/config/config.tom
 # reset
 seid tendermint unsafe-reset-all --home $HOME/.sei
 
-echo -e "\e[1m\e[32m4. Starting service... \e[0m" && sleep 1
+echo -e "\e[1m\e[32m4. Memulai Service... \e[0m" && sleep 1
 # create service
 sudo tee /etc/systemd/system/seid.service > /dev/null <<EOF
 [Unit]
@@ -127,5 +128,5 @@ sudo systemctl enable seid
 sudo systemctl restart seid
 
 echo '=============== SETUP FINISHED ==================='
-echo -e 'To check logs: \e[1m\e[32mjournalctl -u seid -f -o cat\e[0m'
-echo -e "To check sync status: \e[1m\e[32mcurl -s localhost:${SEI_PORT}657/status | jq .result.sync_info\e[0m"
+echo -e 'Untuk cek logs: \e[1m\e[32mjournalctl -u seid -f -o cat\e[0m'
+echo -e "Untuk cek status sinkron: \e[1m\e[32mcurl -s localhost:${SEI_PORT}657/status | jq .result.sync_info\e[0m"
