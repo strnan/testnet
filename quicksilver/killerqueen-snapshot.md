@@ -12,7 +12,7 @@
 - [Hapus data QuickSilver](https://github.com/yantodotid/testnet/blob/main/quicksilver/killerqueen-snapshot.md#hapus-data-quicksilver-opsional)
 - [Install QuickSilver](https://github.com/yantodotid/testnet/blob/main/quicksilver/killerqueen-snapshot.md#install-quicksilver-opsional)
 - [Sinkronisasi](https://github.com/yantodotid/testnet/blob/main/quicksilver/killerqueen-snapshot.md#sinkronisasi)
-- [Update QuickSilver ke versi v0.4.1](https://github.com/yantodotid/testnet/blob/main/quicksilver/killerqueen-snapshot.md#update-quicksilver-ke-versi-v042)
+- [Update QuickSilver ke versi v0.4.2](https://github.com/yantodotid/testnet/blob/main/quicksilver/killerqueen-snapshot.md#update-quicksilver-ke-versi-v042)
 - [Ambil Data Snapshot](https://github.com/yantodotid/testnet/blob/main/quicksilver/killerqueen-snapshot.md#ambil-data-snapshot)
 - [Jalankan Node](https://github.com/yantodotid/testnet/blob/main/quicksilver/killerqueen-snapshot.md#jalankan-node)
 - [Restore Validator dan Wallet](https://github.com/yantodotid/testnet/blob/main/quicksilver/killerqueen-snapshot.md#restore-validator-dan-wallet)
