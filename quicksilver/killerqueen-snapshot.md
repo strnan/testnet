@@ -9,10 +9,10 @@
 <blockquote>
     
 - [Cara Menggunakan Snapshot Killerqueen-1](https://github.com/yantodotid/testnet/blob/main/quicksilver/killerqueen-snapshot.md#cara-menggunakan-snapshot-quicksilver-killerqueen-1)
-- [Hapus data QuickSilver](https://github.com/yantodotid/testnet/blob/main/quicksilver/killerqueen-snapshot.md#hapus-data-quicksilver)
-- [Install QuickSilver](https://github.com/yantodotid/testnet/blob/main/quicksilver/killerqueen-snapshot.md#install-quicksilver)
+- [Hapus data QuickSilver](https://github.com/yantodotid/testnet/blob/main/quicksilver/killerqueen-snapshot.md#hapus-data-quicksilver-opsional)
+- [Install QuickSilver](https://github.com/yantodotid/testnet/blob/main/quicksilver/killerqueen-snapshot.md#install-quicksilver-opsional)
 - [Sinkronisasi](https://github.com/yantodotid/testnet/blob/main/quicksilver/killerqueen-snapshot.md#sinkronisasi)
-- [Update QuickSilver ke versi v0.4.1](https://github.com/yantodotid/testnet/blob/main/quicksilver/killerqueen-snapshot.md#update-quicksilver-ke-versi-v041)
+- [Update QuickSilver ke versi v0.4.1](https://github.com/yantodotid/testnet/blob/main/quicksilver/killerqueen-snapshot.md#update-quicksilver-ke-versi-v042)
 - [Ambil Data Snapshot](https://github.com/yantodotid/testnet/blob/main/quicksilver/killerqueen-snapshot.md#ambil-data-snapshot)
 - [Jalankan Node](https://github.com/yantodotid/testnet/blob/main/quicksilver/killerqueen-snapshot.md#jalankan-node)
 - [Restore Validator dan Wallet](https://github.com/yantodotid/testnet/blob/main/quicksilver/killerqueen-snapshot.md#restore-validator-dan-wallet)
@@ -25,20 +25,20 @@
 
 Cara ini digunakan untuk mempercepat sinkronisasi Quicksilver dalam waktu 30-60 menit saja. Ini tergantung spek VPS-nya, mungkin bisa cepat atau lambat (yang jelas tidak menunggu berhari-hari).
 
-## Hapus data QuickSilver
+## Hapus data QuickSilver (Opsional)
 Sebelum melakukan ini, harap backup data-data penting kalian seperti <code>priv_validator_key.json</code> dan <code>mnemonic</code> kalian! Karena jika tidak, maka kalian ***tidak akan bisa menjalankan validatornya dan kehilangan selamanya!*** Jika kalian baru pertama kali menggunakan Quicksilver, kalian bisa **abaikan** bagian ini.
 
 - Backup <code>priv_validator_key.json</code>
     Lakukan ini jika memang sebelumnya validator kalian sudah jalan.
 
-```
+```bash
 nano .quicksilverd/config/priv_validator_key.json
 ```
 Copy semua isinya dan simpan kedalam notepad atau catatan. Untuk <code>Mnemonic</code> kalian bisa temukan saat pertama kali membuat wallet.
 
 - Delete Semua data Quicksilver setelah melakukan backup.
 
-```
+```bash
 sudo systemctl stop quicksilverd
 sudo systemctl disable quicksilverd
 sudo rm /etc/systemd/system/quicksilver* -rf
@@ -47,7 +47,7 @@ sudo rm $HOME/.quicksilver* -rf
 sudo rm $HOME/quicksilver -rf
 ```
 
-## Install QuickSilver
+## Install QuickSilver (Opsional)
 Install Quicksilver dari awal dan jika kalian baru pertama kali install QuickSilver harap lakukan command ini terlebih dahulu sebelum memulai install.
 
 ```
@@ -55,7 +55,7 @@ sudo apt install && sudo apt upgrade
 ```
 Setelah itu lakukan install Quicksilver.
 
-```
+```bash
 wget -O quicksilver.sh https://raw.githubusercontent.com/kj89/testnet_manuals/main/quicksilver/quicksilver.sh && chmod +x quicksilver.sh && ./quicksilver.sh
 ```
 
@@ -76,7 +76,7 @@ quicksilverd status 2>&1 | jq .SyncInfo
 
 Jika sudah muncul kurang lebih contohnya seperti ini. **Ingat** setiap user memiliki input yang berbeda-beda setiap pertama kali instalisasi.
 
-```
+```jq
 {
   "latest_block_hash": "4D080DC2C3733316B2121314BA22FE7359E2DA537897967DEF645F2F774BAB7B",
   "latest_app_hash": "D1CF57D4CF15F2F4F736E0511B228F4BBA9E839E9BC96AE430A066A19CB60500",
@@ -96,7 +96,7 @@ Setelah sudah muncul seperti itu, stop nodenya.
 sudo systemctl stop quicksilverd
 ```
 
-## Update Quicksilver ke versi v0.4.1
+## Update Quicksilver ke versi v0.4.2
 Update Quicksilver ke versi yang terbaru, karena versi yang saat ini kalian install adalah versi **v0.4.0**. Untuk cara upgrade ke versi baru bisa lakukan command berikut ini. <code>***Ingat, lakukan commandnya satu persatu agar tidak terjadi error!***</code>
 
 ```
@@ -104,7 +104,7 @@ cd $HOME
 
 rm quicksilver -rf
 
-git clone https://github.com/ingenuity-build/quicksilver.git --branch v0.4.1
+git clone https://github.com/ingenuity-build/quicksilver.git --branch v0.4.2
 
 cd quicksilver
 
@@ -119,7 +119,7 @@ cd $HOME
 ```
 quicksilverd version
 ```
-Jika sudah muncul <code>v0.4.1</code> maka sudah memakai versi terbarunya, lanjut ke step selanjutnya.
+Jika sudah muncul <code>v0.4.2</code> maka sudah memakai versi terbarunya, lanjut ke step selanjutnya.
 
 ## Ambil Data Snapshot 
 Dibagian ini kalian diharuskan men-download data snapshot untuk mempercepat sinkronisasi dalam waktu 5-10 menit saja. Kalian akan melakukan download data snapshot dan tunggu hingga 100%. <code>***Ingat, lakukan command satu persatu agar tidak terjadi error!***</code>
@@ -135,19 +135,28 @@ sudo systemctl stop quicksilverd
     Pastikan semua data yang penting seperti <code>priv_validator_key.json</code> dan <code>mnemonic</code> sudah disimpan dalam catatan atau notepad kalian.
 
 ```
-quicksilverd tendermint unsafe-reset-all --home $HOME/.quicksilverd
+quicksilverd tendermint unsafe-reset-all --home $HOME/.quicksilverd --keep-addr-book
+```
+
+- Download Aplikasi Yang Diperlukan
+
+```bash
+sudo apt update
+sudo apt install snapd -y
+sudo snap install lz4
 ```
 
 - Download Data Snapshot
 
-    Download Data Snapshot ini membutuhkan waktu kurang lebih 5-10 menit (setiap VPS kecepatan bandwidth berbeda-beda).
+    Download Data Snapshot ini membutuhkan waktu kurang lebih 30-60 menit (setiap VPS memiliki kecepatan bandwidth berbeda-beda) Jadi mungkin bisa lebih lama dari estimasi waktunya.
 
-```
-rm -rf $HOME/.quicksilverd/data/*
+```bash
+cd $HOME/.quicksilverd
+rm -rf data
 
-URL="https://snapshot.testnet.run/testnet/quicksilver/killerqueen-1_2022-07-09.tar"
+SNAP_NAME=$(curl -s https://snapshots1-testnet.nodejumper.io/quicksilver-testnet/ | egrep -o ">killerqueen-1.*\.tar.lz4" | tr -d ">")
+curl https://snapshots1-testnet.nodejumper.io/quicksilver-testnet/${SNAP_NAME} | lz4 -dc - | tar -xf -
 
-wget -O - $URL | tar -xvf - -C $HOME/.quicksilverd/data
 ```
 
 - Download addrbook.json
@@ -167,10 +176,10 @@ cd $HOME
 ## Jalankan Node
 Setelah selesai download, kalian langsung saja start Node kalian untuk memastikan kalau snapshot kalian sudah berjalan dengan lancar. Data snapshot ini akan dimulai dari block <code>172368</code>, jadi tidak perlu memulai dari block pertama.
 
-- Start Node
+- Restart Node
 
 ```
-sudo systemctl start quicksilverd
+sudo systemctl restart quicksilverd
 ```
 
 - Cek sinkronisasi
@@ -184,7 +193,7 @@ quicksilverd status 2>&1 | jq .SyncInfo
     Hanya untuk memastikan kalau sudah jalan blocknya, kalian bisa skip bagian ini jika sudah muncul blocknya.
 
 ```
-sudo journalctl -u quicksilverd -f -o cat
+sudo journalctl -u quicksilverd -f --no-hostname -o cat
 ```
 Untuk keluar tinggal tekan tombol <code>CTRL + Z</code>.
 
@@ -226,6 +235,7 @@ sudo systemctl start quicksilverd
     
 - [TestNetRun](https://snapshot.testnet.run/testnet/quicksilver/)
 
+- [NodeJumper](https://snapshots1-testnet.nodejumper.io/quicksilver-testnet/)
     
 </blockquote>
 
