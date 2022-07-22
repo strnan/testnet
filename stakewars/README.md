@@ -30,3 +30,6 @@ Challenge ini bisa kalian kerjakan hingga tanggal `11 Agustus 2022` dan jangan l
 | 002        | Setup Wallet dan Run Validator       | [Tutorial](https://github.com/yantodotid/testnet/blob/main/stakewars/task/002.md) |
 | 003        | Mounting Staking Pool                | [Tutorial](https://github.com/yantodotid/testnet/blob/main/stakewars/task/003.md) |
 | 004        | Membuat Monitoring Node Status       | [Tutorial](https://github.com/yantodotid/testnet/blob/main/stakewars/task/004.md) |
+
+
+Form for Submission Challenges [disini](https://docs.google.com/forms/d/e/1FAIpQLScp9JEtpk1Fe2P9XMaS9Gl6kl9gcGVEp3A5vPdEgxkHx3ABjg/viewform).
