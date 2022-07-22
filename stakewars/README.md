@@ -32,7 +32,7 @@ Challenge ini bisa kalian kerjakan hingga tanggal `11 Agustus 2022` dan jangan l
 | 004        | Membuat Monitoring Node Status        | [Tutorial](https://github.com/yantodotid/testnet/blob/main/stakewars/task/004.md) |
 | 005        | Membuat Tutorial Stakewars            | -                                                                                 |
 | 006        | Membuat Ping Otomatis Setiap 5 Menit  | [Tutorial](https://github.com/yantodotid/testnet/blob/main/stakewars/task/006.md) |
-| 007        | Membuat Data Science dan Staking      | -                                                                                 |
+| 007        | Membuat Data Science untuk Staking    | -                                                                                 |
 
 
 Form for Submission Challenges 5-7 [disini](https://docs.google.com/forms/d/e/1FAIpQLScp9JEtpk1Fe2P9XMaS9Gl6kl9gcGVEp3A5vPdEgxkHx3ABjg/viewform).
