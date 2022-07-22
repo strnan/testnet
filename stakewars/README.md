@@ -22,7 +22,7 @@ Sebelum Setup Node, Minimum spesifikasi VPS yang perlu kalian gunakan adalah seb
 
 ## Challenge
 
-Challenge ini bisa kalian kerjakan hingga tanggal `11 Agustus 2022` dan jangan lupa juga isi form [disini](https://nearprotocol1001.typeform.com/to/Z39N7cU9).
+Challenge ini bisa kalian kerjakan hingga tanggal `11 Agustus 2022` dan jangan lupa juga untuk isi `Chunk-Only Producer Onboarding Form` [disini](https://nearprotocol1001.typeform.com/to/Z39N7cU9). Untuk bagian ID kalian bisa isi dengan nama wallet kalian (contoh : tester01.shardnet.near).
 
 | Challenges | Deskripsi                            | Link                                                                              |
 | ---------- | ------------------------------------ | --------------------------------------------------------------------------------- |
@@ -32,4 +32,4 @@ Challenge ini bisa kalian kerjakan hingga tanggal `11 Agustus 2022` dan jangan l
 | 004        | Membuat Monitoring Node Status       | [Tutorial](https://github.com/yantodotid/testnet/blob/main/stakewars/task/004.md) |
 
 
-Form for Submission Challenges [disini](https://docs.google.com/forms/d/e/1FAIpQLScp9JEtpk1Fe2P9XMaS9Gl6kl9gcGVEp3A5vPdEgxkHx3ABjg/viewform).
+`Form for Submission Challenges` [disini](https://docs.google.com/forms/d/e/1FAIpQLScp9JEtpk1Fe2P9XMaS9Gl6kl9gcGVEp3A5vPdEgxkHx3ABjg/viewform).
