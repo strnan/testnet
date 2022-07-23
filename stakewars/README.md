@@ -22,7 +22,7 @@ Sebelum Setup Node, Minimum spesifikasi VPS yang perlu kalian gunakan adalah seb
 
 ## Challenge
 
-Challenge ini bisa kalian kerjakan hingga tanggal `11 Agustus 2022` dan jangan lupa juga untuk isi `Chunk-Only Producer Onboarding Form` [disini](https://nearprotocol1001.typeform.com/to/Z39N7cU9). Untuk bagian ID kalian bisa isi dengan NEAR wallet mainnet kalian (contoh : tester01.near).
+Challenge ini bisa kalian kerjakan hingga tanggal `11 Agustus 2022` dan jangan lupa juga untuk isi `Chunk-Only Producer Onboarding Form` [disini](https://nearprotocol1001.typeform.com/to/Z39N7cU9). Untuk bagian ID kalian bisa kosongkan saja karena hanya diisi oleh user yang pernah mengikuti Stakewars sebelumnya.
 
 | Challenges | Deskripsi                             | Link                                                                              |
 | ---------- | ------------------------------------- | --------------------------------------------------------------------------------- |
