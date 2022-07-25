@@ -29,7 +29,7 @@ Sebelum menjalankan Stakewars, kalian harus membuat [Droplet](https://www.digita
 
     Jika kalian masih user baru, kalian harus meminta request ke DigitalOcean untuk membuat Droplet pada spesifikasi diatas agar bisa digunakan untuk menjalankan Stakewars nanti dan juga siapkan dana sebesar 262$ untuk mengaktifkan VPS dengan spesifikasi tersebut nanti.
 
-2. Pilih server London
+2. Pilih server London atau server lainnya yang memiliki bandwidth sangat cepat.
 
     ![Screenshot_51](https://user-images.githubusercontent.com/35837931/180670530-110d4316-3b4d-451d-bab0-952d307a005f.png)
 
