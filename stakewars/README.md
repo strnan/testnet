@@ -23,11 +23,11 @@ Sebelum Setup Node, Minimum spesifikasi VPS yang perlu kalian gunakan adalah seb
 ## Setup DigitalOcean
 Sebelum menjalankan Stakewars, kalian harus membuat [Droplet](https://www.digitalocean.com/products/droplets) dari [DigitalOcean](https://www.digitalocean.com/?refcode=825d86d58739&utm_campaign=Referral_Invite&utm_medium=Referral_Program&utm_source=badge) terlebih dahulu dengan cara berikut ini.
 
-1. Kalian buat droplet
+1. Kalian buat droplet dengan spesifikasi dibawah ini.
 
     ![Screenshot_49_1](https://user-images.githubusercontent.com/35837931/180670413-b90861e2-f782-46b9-b68c-f2e8c8a374b0.png)
 
-    Jika kalian masih user baru, kalian harus meminta request ke DigitalOcean untuk membuat Droplet pada spesifikasi diatas agar bisa digunakan untuk menjalankan Stakewars nanti.
+    Jika kalian masih user baru, kalian harus meminta request ke DigitalOcean untuk membuat Droplet pada spesifikasi diatas agar bisa digunakan untuk menjalankan Stakewars nanti dan juga siapkan dana sebesar 262$ untuk mengaktifkan VPS dengan spesifikasi tersebut nanti.
 
 2. Pilih server London
 
@@ -53,7 +53,7 @@ Sebelum menjalankan Stakewars, kalian harus membuat [Droplet](https://www.digita
 
     ![Screenshot_55](https://user-images.githubusercontent.com/35837931/180670944-f68092b4-5291-4044-bfa7-ad1de1c50e5b.png)
 
-    Setelah itu kalian bisa login VPS kalian dengan aplikasi seperti [MobaXterm](https://mobaxterm.mobatek.net/download.html), [Termius](https://termius.com/) dan lain sebagainya. Lalu masukkan password yang kalian buat tadi dan kalian bisa menjalankan challenges-nya dibawah ini.
+    Setelah itu kalian bisa login VPS menggunakan `IPv4` yang sudah dibuat dengan aplikasi seperti [MobaXterm](https://mobaxterm.mobatek.net/download.html), [Termius](https://termius.com/) dan lain sebagainya. Lalu masukkan password yang kalian buat tadi dan kalian bisa menjalankan challenges-nya dibawah ini.
   
 ## Challenge
 
