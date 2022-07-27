@@ -9,6 +9,7 @@
 <img src="https://user-images.githubusercontent.com/35837931/180386866-d7d109a2-bf61-4ebf-ae8e-26f64604a094.png"  width="500px"/>
 <p>
 
+#### Official Docs : https://github.com/near/stakewars-iii
 
 Sebelum Setup Node, Minimum spesifikasi VPS yang perlu kalian gunakan adalah sebagai berikut.
 
