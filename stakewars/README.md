@@ -73,5 +73,6 @@ Challenge ini bisa kalian kerjakan hingga tanggal `11 Agustus 2022` (Kecuali Cha
 | 009        | Mengelola Uptime Shardnet             | 28 Juli 2022  | 11 Agustus 2022   |-                                                                  |
 | 010        | Staking Farm 2.0                      | 29 Juli 2022  | 07 September 2022 |-                                                                  |
 
+>Challenges 1-4 tidak perlu mengisi form.
 
 Form untuk Submission Challenges 5-10 [disini](https://docs.google.com/forms/d/e/1FAIpQLScp9JEtpk1Fe2P9XMaS9Gl6kl9gcGVEp3A5vPdEgxkHx3ABjg/viewform).
