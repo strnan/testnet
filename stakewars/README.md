@@ -58,17 +58,20 @@ Sebelum menjalankan Stakewars, kalian harus membuat [Droplet](https://www.digita
   
 ## Challenge
 
-Challenge ini bisa kalian kerjakan hingga tanggal `11 Agustus 2022` dan jangan lupa juga untuk isi `Chunk-Only Producer Onboarding Form` [disini](https://nearprotocol1001.typeform.com/to/Z39N7cU9). Untuk bagian ID bisa isi dengan email kalian.
+Challenge ini bisa kalian kerjakan hingga tanggal `11 Agustus 2022` (Kecuali Challenges 007 dan 010) dan jangan lupa juga untuk isi `Chunk-Only Producer Onboarding Form` [disini](https://nearprotocol1001.typeform.com/to/Z39N7cU9). Untuk bagian ID bisa isi dengan email kalian.
 
-| Challenges | Deskripsi                             | Tanggal Mulai | Tanggal Selesai | Link                                                              |
-| ---------- | ------------------------------------- | ------------- | --------------- | ----------------------------------------------------------------- |
-| 001        | Setup NEAR-CLI                        | 13 Juli 2022  | 11 Agustus 2022 |[Tutorial](https://github.com/yantodotid/testnet/blob/main/stakewars/task/001.md) |
-| 002        | Setup Wallet dan Run Validator        | 13 Juli 2022  | 11 Agustus 2022 |[Tutorial](https://github.com/yantodotid/testnet/blob/main/stakewars/task/002.md) |
-| 003        | Mounting Staking Pool                 | 13 Juli 2022  | 11 Agustus 2022 |[Tutorial](https://github.com/yantodotid/testnet/blob/main/stakewars/task/003.md) |
-| 004        | Membuat Monitoring Node Status        | 13 Juli 2022  | 11 Agustus 2022 |[Tutorial](https://github.com/yantodotid/testnet/blob/main/stakewars/task/004.md) |
-| 005        | Membuat Tutorial Stakewars            | 15 Juli 2022  | 11 Agustus 2022 |-                                                                  |
-| 006        | Membuat Ping Otomatis Setiap 2 Jam    | 19 Juli 2022  | 11 Agustus 2022 |[Tutorial](https://github.com/yantodotid/testnet/blob/main/stakewars/task/006.md) |
-| 007        | Membuat Data Science untuk Staking    | 22 Juli 2022  | 07 September 2022 |-                                                                |
+| Challenges | Deskripsi                             | Tanggal Mulai | Tanggal Selesai   | Link                                                              |
+| ---------- | ------------------------------------- | ------------- | ----------------- | ----------------------------------------------------------------- |
+| 001        | Setup NEAR-CLI                        | 13 Juli 2022  | 11 Agustus 2022   |[Tutorial](https://github.com/yantodotid/testnet/blob/main/stakewars/task/001.md) |
+| 002        | Setup Wallet dan Run Validator        | 13 Juli 2022  | 11 Agustus 2022   |[Tutorial](https://github.com/yantodotid/testnet/blob/main/stakewars/task/002.md) |
+| 003        | Mounting Staking Pool                 | 13 Juli 2022  | 11 Agustus 2022   |[Tutorial](https://github.com/yantodotid/testnet/blob/main/stakewars/task/003.md) |
+| 004        | Membuat Monitoring Node Status        | 13 Juli 2022  | 11 Agustus 2022   |[Tutorial](https://github.com/yantodotid/testnet/blob/main/stakewars/task/004.md) |
+| 005        | Membuat Tutorial Stakewars            | 15 Juli 2022  | 11 Agustus 2022   |-                                                                  |
+| 006        | Membuat Ping Otomatis Setiap 2 Jam    | 19 Juli 2022  | 11 Agustus 2022   |[Tutorial](https://github.com/yantodotid/testnet/blob/main/stakewars/task/006.md) |
+| 007        | Membuat Data Science untuk Staking    | 22 Juli 2022  | 07 September 2022 |-                                                                  |
+| 008        | Split Revenue untuk Staking Rewards   | 26 Juli 2022  | 11 Agustus 2022   |-                                                                  |
+| 009        | Mengelola Uptime Shardnet             | 28 Juli 2022  | 11 Agustus 2022   |-                                                                  |
+| 010        | Staking Farm 2.0                      | 29 Juli 2022  | 07 September 2022 |-                                                                  |
 
 
-Form for Submission Challenges 5-7 [disini](https://docs.google.com/forms/d/e/1FAIpQLScp9JEtpk1Fe2P9XMaS9Gl6kl9gcGVEp3A5vPdEgxkHx3ABjg/viewform).
+Form untuk Submission Challenges 5-10 [disini](https://docs.google.com/forms/d/e/1FAIpQLScp9JEtpk1Fe2P9XMaS9Gl6kl9gcGVEp3A5vPdEgxkHx3ABjg/viewform).
