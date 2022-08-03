@@ -9,4 +9,6 @@
 | 005        | Membuat Tutorial Stakewars            | 15 Juli 2022  | 11 Agustus 2022 |-                                                                  |
 | 006        | Membuat Ping Otomatis Setiap 2 Jam    | 19 Juli 2022  | 11 Agustus 2022 |[Tutorial](https://github.com/yantodotid/testnet/blob/main/stakewars/task/006.md) |
 | 007        | Membuat Data Science untuk Staking    | 22 Juli 2022  | 07 September 2022 |-                                                                |
-
+| 008        | Split Revenue untuk Staking Rewards   | 26 Juli 2022  | 11 Agustus 2022   |-                                                                  |
+| 009        | Mengelola Uptime Shardnet             | 28 Juli 2022  | 11 Agustus 2022   |-                                                                  |
+| 010        | Staking Farm 2.0                      | 29 Juli 2022  | 07 September 2022 |-                                                                  |
