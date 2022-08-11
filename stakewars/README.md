@@ -14,11 +14,11 @@
 Sebelum Setup Node, Minimum spesifikasi VPS yang perlu kalian gunakan adalah sebagai berikut.
 
 
-| Hardware       | Chunk-Only Producer  Specifications                                   |
+| Hardware       | Chunk-Only Producer  Spesifikasi                                      |
 | -------------- | ---------------------------------------------------------------       |
-| CPU            | 4-Core CPU with AVX support                                           |
-| RAM            | 8GB DDR4                                                              |
-| Storage        | 500GB SSD                                                             |
+| CPU            | 8-Core CPU dengan didukung AVX                                        |
+| RAM            | 16GB DDR4                                                             |
+| Storage        | 500GB SSD (NVMe sangat direkomendasikan)                              |
 
 
 ## Setup DigitalOcean
