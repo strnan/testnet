@@ -58,7 +58,7 @@ Sebelum menjalankan Stakewars, kalian harus membuat [Droplet](https://www.digita
   
 ## Challenge
 
-Challenge ini bisa kalian kerjakan hingga tanggal `07 September 2022`= dan jangan lupa juga untuk isi `Chunk-Only Producer Onboarding Form` [disini](https://nearprotocol1001.typeform.com/to/Z39N7cU9). Untuk bagian ID bisa isi dengan email kalian.
+Challenge ini bisa kalian kerjakan hingga tanggal `07 September 2022` dan jangan lupa juga untuk isi `Chunk-Only Producer Onboarding Form` [disini](https://nearprotocol1001.typeform.com/to/Z39N7cU9). Untuk bagian ID bisa isi dengan email kalian.
 
 | Challenges | Deskripsi                             | Tanggal Mulai | Tanggal Selesai   | Link                                                              |
 | ---------- | ------------------------------------- | ------------- | ----------------- | ----------------------------------------------------------------- |
@@ -72,6 +72,7 @@ Challenge ini bisa kalian kerjakan hingga tanggal `07 September 2022`= dan janga
 | 008        | Split Revenue untuk Staking Rewards   | 26 Juli 2022  | 07 September 2022 |-                                                                  |
 | 009        | Mengelola Uptime Shardnet             | 28 Juli 2022  | 07 September 2022 |-                                                                  |
 | 010        | Mengelola Uptime diatas 60%           | 08 Agustus 2022  | 07 September 2022 |-                                                               |
+| 011        | Staking Farm 2.0                      | 29 Juli 2022  | 07 September 2022 |-                                                                  |
 
 >Challenges 1-4 tidak perlu mengisi form.
 
