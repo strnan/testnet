@@ -19,7 +19,7 @@ rm -rf $HOME/.nolus/data
 3. Download latest snapshot
 
 ```bash
-curl -L http://snapshot.nolus.singopedia.my.id/snapshot_nolus.tar.lz4 | tar -Ilz4 -xf - -C $HOME/.nolus
+curl -L http://snapshot.nolus.singopedia.my.id/snapshot/nolus/snapshot_nolus.tar.lz4 | tar -Ilz4 -xf - -C $HOME/.nolus
 ```
 
 4. Move your `priv_validator_state.json` to `.nolus/data` folder
